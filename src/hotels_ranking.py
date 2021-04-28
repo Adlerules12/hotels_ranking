@@ -12,15 +12,15 @@ _DATA_FILEPATH_ = '../datasets/hotels_data.csv'
 
 
 def GaussianNB_train(X_train, Y_train, n_classes, plot: bool=False) -> tuple:
-  """
-  .
+	"""
+	.
 
-  :param X_train:
-  :param Y_train:
-  :param n_classes:
-  :param plot[=False]:
-  :return:
-  """
+	:param X_train:
+	:param Y_train:
+	:param n_classes:
+	:param plot[=False]:
+	:return:
+	"""
 	from sklearn.naive_bayes import GaussianNB
 
 	model = GaussianNB()
@@ -50,15 +50,15 @@ def GaussianNB_train(X_train, Y_train, n_classes, plot: bool=False) -> tuple:
 	return cmGNB, model
 
 def DecisionTree_train(X_train, Y_train, n_classes, plot: bool=False) -> tuple:
-  """
-  .
+	"""
+	.
 
-  :param X_train:
-  :param Y_train:
-  :param n_classes:
-  :param plot[=False]:
-  :return:
-  """
+	:param X_train:
+	:param Y_train:
+	:param n_classes:
+	:param plot[=False]:
+	:return:
+	"""
 	from sklearn.tree import DecisionTreeClassifier
 
 	model = DecisionTreeClassifier(criterion='entropy', max_depth=30)
@@ -92,14 +92,14 @@ def DecisionTree_train(X_train, Y_train, n_classes, plot: bool=False) -> tuple:
 	return cmTree, model
 
 def agg_hotels(hotels, n_classes, plot: bool=False) -> object:
-  """
-  .
+	"""
+	.
 
-  :param hotels:
-  :param n_classes:
-  :param plot[=False]:
-  :return:
-  """
+	:param hotels:
+	:param n_classes:
+	:param plot[=False]:
+	:return:
+	"""
 	from scipy.cluster.hierarchy import dendrogram, linkage
 	from sklearn.cluster import AgglomerativeClustering
 	from pandas import factorize, DataFrame
