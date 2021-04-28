@@ -7,7 +7,7 @@ from numpy import random
 
 random.seed(2021)
 
-_N_CLASSES_ = 4
+_N_CLASSES_     = 4
 _DATA_FILEPATH_ = '../datasets/hotels_data.csv'
 
 
