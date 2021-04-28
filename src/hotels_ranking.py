@@ -1,5 +1,5 @@
-from google.colab import drive
-drive.mount('/content/gdrive', force_remount=False)
+# from google.colab import drive
+# drive.mount('/content/gdrive', force_remount=False)
 # %cd your/path/to/the/code/directory
 
 from sklearn.metrics import roc_curve, auc
