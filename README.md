@@ -1,29 +1,19 @@
-# hotels_ranking
+# Hotels Ranking Classifiers
 
-Foobar is a Python library for dealing with word pluralization.
+## Project Description:
+ ...
 
-## Installation
+## Results By ROC Curves:
+![Gaussian Naive Bayes](https://github.com/Adlerules12/hotels_ranking/blob/main/images/GaussianNB_ROC.png)
+![Decision Tree](https://github.com/Adlerules12/hotels_ranking/blob/main/images/DT_ROC.png)
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+## Results By 150 Hotels Aggregation:
+![Decision Tree](https://github.com/Adlerules12/hotels_ranking/blob/main/images/AGG.png)
 
-```bash
-pip install foobar
+## Installation (Based On Python3.7.xx)
+
 ```
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+python -m pip install -r requirements.txt
+cd src
+python hotels_ranking.py
 ```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
