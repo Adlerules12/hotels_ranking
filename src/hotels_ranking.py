@@ -1,7 +1,3 @@
-# from google.colab import drive
-# drive.mount('/content/gdrive', force_remount=False)
-# %cd your/path/to/the/code/directory
-
 from sklearn.metrics import roc_curve, auc
 from sklearn import metrics
 from sklearn.preprocessing import label_binarize
@@ -12,7 +8,7 @@ from numpy import random
 random.seed(2021)
 
 _N_CLASSES_ = 4
-_DATA_FILEPATH_ = 'hotels_data.csv'
+_DATA_FILEPATH_ = '../datasets/hotels_data.csv'
 
 def GaussianNB_train(X_train, Y_train, n_classes, plot: bool=False) -> tuple:
 	from sklearn.naive_bayes import GaussianNB
